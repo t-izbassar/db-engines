@@ -13,5 +13,7 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.11
+    - name: Check formatting
+      run: sbt scalafmtCheckAll
     - name: Run tests
       run: sbt test
